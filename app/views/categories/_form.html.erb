@@ -1,6 +1,6 @@
-<%= form_with(model: category, class: "contents") do |form| %>
+<%= form_with(model: category) do |form| %>
   <% if category.errors.any? %>
-    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
+    <div style="color: red">
       <h2><%= pluralize(category.errors.count, "error") %> prohibited this category from being saved:</h2>
 
       <ul>
@@ -11,7 +11,10 @@
     </div>
   <% end %>
 
-  <div class="inline">
-    <%= form.submit class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+  <div>
+    <%= form.text_field :name, placeholder: :Name, class: "input"%>
+    <%= form.text_field :icon, placeholder: :icon, class: "input"%>
+      <%= form.submit "Save" %>
   </div>
+
 <% end %>
