@@ -3,7 +3,8 @@ class TransactionsController < ApplicationController
 
   # GET /transactions or /transactions.json
   def index
-    @transactions = Transaction.all
+    @category = current_user.categories.find(params[:category_id])
+    @transactions = @category.transactions.order(created_at: :desc)
   end
 
   # GET /transactions/1 or /transactions/1.json
@@ -21,8 +22,10 @@ class TransactionsController < ApplicationController
 
   # POST /transactions or /transactions.json
   def create
+    @category = current_user.categories.find(params[:category_id])
     @transaction = Transaction.new(transaction_params)
     @transaction.user_id = current_user.id
+    
     respond_to do |format|
       if @transaction.save
         format.html { redirect_to transaction_url(@transaction), notice: "Transaction was successfully created." }
