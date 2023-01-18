@@ -4,7 +4,6 @@ class TransactionsController < ApplicationController
   # GET /transactions or /transactions.json
   def index
     @category = current_user.categories.find(params[:category_id])
-    @transactions = @category.transactions.order(created_at: :desc)
   end
 
   # GET /transactions/1 or /transactions/1.json
@@ -13,7 +12,7 @@ class TransactionsController < ApplicationController
 
   # GET /transactions/new
   def new
-    @categories = current_user.categories.all
+    @category = Category.find(params[:category_id])
     @transaction = Transaction.new
   end
 
@@ -23,14 +22,13 @@ class TransactionsController < ApplicationController
 
   # POST /transactions or /transactions.json
   def create
-    transaction = Transaction.create(name: params[:transaction][:name], amount: params[:transaction][:amount], user: current_user)
-    category = category.find(params[:transaction][:category])
-
-    @transaction = GroupTransaction.new(payment:, category:)
+    @category = Category.find(params[:category_id])
+    @transaction = @category.transactions.new(name: transaction_params[:name],
+                                              amount: transaction_params[:amount], user_id: current_user.id)
 
     respond_to do |format|
       if @transaction.save
-        format.html { redirect_to transaction_url(@transaction), notice: "Transaction was successfully created." }
+        format.html { redirect_to category_transactions_path(@category), notice: "Transaction was successfully created." }
         format.json { render :show, status: :created, location: @transaction }
       else
         format.html { render :new, status: :unprocessable_entity }
