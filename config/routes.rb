@@ -14,7 +14,9 @@ Rails.application.routes.draw do
   
   resources :users
   resources :categories do
-    resources :transactions
+    resources :transactions do
+      resources :group_transactions
+    end
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

@@ -1,4 +1,5 @@
 class CategoriesController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_category, only: %i[show edit update destroy]
 
   # GET /categories or /categories.json
@@ -24,8 +25,7 @@ class CategoriesController < ApplicationController
   # POST /categories or /categories.json
   def create
     category = Category.new(category_params)
-    user = current_user
-    category.user = user
+    category.user = current_user
 
     respond_to do |format|
       if category.save

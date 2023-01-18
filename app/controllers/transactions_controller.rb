@@ -13,6 +13,7 @@ class TransactionsController < ApplicationController
 
   # GET /transactions/new
   def new
+    @categories = current_user.categories.all
     @transaction = Transaction.new
   end
 
@@ -22,10 +23,11 @@ class TransactionsController < ApplicationController
 
   # POST /transactions or /transactions.json
   def create
-    @category = current_user.categories.find(params[:category_id])
-    @transaction = Transaction.new(transaction_params)
-    @transaction.user_id = current_user.id
-    
+    transaction = Transaction.create(name: params[:transaction][:name], amount: params[:transaction][:amount], user: current_user)
+    category = category.find(params[:transaction][:category])
+
+    @transaction = GroupTransaction.new(payment:, category:)
+
     respond_to do |format|
       if @transaction.save
         format.html { redirect_to transaction_url(@transaction), notice: "Transaction was successfully created." }
