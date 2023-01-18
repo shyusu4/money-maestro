@@ -1,0 +1,7 @@
+<%= form_with(url: category_transactions_path, model: transaction) do |form| %>
+    <div class='transaction-form'>
+    <%= form.text_field :name, class: 'field', placeholder: 'Name' %>
+    <%= form.text_field :amount, class: 'field', placeholder: 'Amount' %>
+    <%= form.submit "Submit", class: 'create-button' %>
+  </div>
+<% end %>
