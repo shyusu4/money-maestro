@@ -4,4 +4,5 @@ class Category < ApplicationRecord
 
   validates :name, presence: true
   validates :icon, presence: true
+  validates :amount, presence: true
 end
