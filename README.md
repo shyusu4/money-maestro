@@ -24,7 +24,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]()
+- [Live Demo Link](https://money-maestro.osc-fr1.scalingo.io/)
 
 ## :card_index: Entity Relationship Diagram <a name="er-diagram"></a>
 ![er-diagram](https://github.com/microverseinc/curriculum-rails/raw/main/capstone/images/erd_diagram.png)
