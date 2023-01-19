@@ -26,6 +26,9 @@
 
 - [Live Demo Link]()
 
+## :card_index: Entity Relationship Diagram <a name="er-diagram"></a>
+![er-diagram](https://github.com/microverseinc/curriculum-rails/raw/main/capstone/images/erd_diagram.png)
+
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
@@ -72,7 +75,11 @@ Give a star if you like this project!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for the project guidelines.
+I would like to thank:
+- [Microverse](https://microverse.org)
+- Code reviewers
+- Under the the [Creative Commons liscense](https://creativecommons.org/licenses/by-nc/4.0/)
+- Original design from [Gregoire Vella on Behance](https://www.behance.net/gregoirevella)
 
 ## 📝 License <a name="license"></a>
 
