@@ -6,7 +6,7 @@ RSpec.describe Category, type: :model do
   it 'should have user id 1' do
     expect(category.user_id).to eq(1)
   end
-  
+
   it 'should have name' do
     category.name = nil
     expect(category).to_not be_valid
