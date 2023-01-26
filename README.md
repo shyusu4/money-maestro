@@ -1,87 +1,95 @@
-# 📗 Table of Contents
+# Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
+- [About the Project](#about-project)
+  - [Built With](#built-with)
+  - [Live Demo](#live-demo)
+- [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
+  - [Install](#install)
   - [Usage](#usage)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [📝 License](#license)
+- [Authors](#authors)
+- [Future Features](#future-features)
+- [Contributing](#contributing)
+- [Show your support](#support)
+- [Acknowledgements](#acknowledgements)
+- [License](#license)
 
-# 📖 Money Maestro <a name="about-project"></a>
+<a name="readme-top"></a>
+# Money Maestro <a name="about-project"></a>
 
-> A RoR blog web application that allows users to manage their transactions and sort them by categories.
+> A Ruby on Rails budgeting app that allows users to manage their transactions and sort them by categories. The app has features such as the ability to add and track expenses, categorize transactions, and view insights about their spending. The app provides users with secure and private access to their data.
 
-## 🛠 Built With <a name="built-with"></a>
+## Built With <a name="built-with"></a>
 
 - Ruby on Rails
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://money-maestro.osc-fr1.scalingo.io/)
 
-## :card_index: Entity Relationship Diagram <a name="er-diagram"></a>
+## Entity Relationship Diagram <a name="er-diagram"></a>
 ![er-diagram](https://github.com/microverseinc/curriculum-rails/raw/main/capstone/images/erd_diagram.png)
 
-## 💻 Getting Started <a name="getting-started"></a>
+## Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
 
-### Prerequisites
+### Prerequisites <a name="prerequisites"></a>
 
-In order to run this project you need to:
+Make sure you have `Git` and `Ruby` installed
+```
+ gem install rails
+```
 
-- Install Ruby on Rails
+### Install <a name="install"></a>
 
-### Setup
+Install the project using this command:
 
-Clone this repository to your desired folder:
+```
+  bundle install
+```
 
-`git clone git@github.com:shyusu4/Budget-App.git`
+### Usage <a name="usage"></a>
 
-### Usage
+Run project using this command:
 
-To run the project, execute the following command:
+```
+rails s
+```
 
-`rails s`
+Run tests using this command:
+```
+rspec spec
+```
+## Author <a name="authors"></a>
 
-## 👥 Authors <a name="authors"></a>
-
-👤 Shakhrizoda Yusupova
+Shakhrizoda Yusupova
 
 - GitHub: [@shyusu4](https://github.com/shyusu4)
 - Twitter: [@shyusu4](https://twitter.com/shyusu4)
 - LinkedIn: [Shakhrizoda Yusupova](https://www.linkedin.com/in/shyusu4/)
 
-## 🔭 Future Features <a name="future-features"></a>
+## Future Features <a name="future-features"></a>
 
 - [ ] **Deployment**
 
-## 🤝 Contributing <a name="contributing"></a>
+## Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page.](https://github.com/shyusu4/Budget-App/issues)
 
-## ⭐️ Show your support <a name="support"></a>
+## Show your support <a name="support"></a>
 
-Give a star if you like this project!
+Give a ⭐️ if you like this project!
 
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
+## Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank:
 - [Microverse](https://microverse.org)
-- Code reviewers
-- Under the the [Creative Commons liscense](https://creativecommons.org/licenses/by-nc/4.0/)
-- Original design from [Gregoire Vella on Behance](https://www.behance.net/gregoirevella)
+- [Creative Commons Liscense](https://creativecommons.org/licenses/by-nc/4.0/)
+- [Gregoire Vella on Behance](https://www.behance.net/gregoirevella)
 
-## 📝 License <a name="license"></a>
+## License <a name="license"></a>
 
 This project is [MIT](https://github.com/shyusu4/Budget-App/blob/dev/MIT.md) licensed.
 
