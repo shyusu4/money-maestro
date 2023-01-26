@@ -1,0 +1,25 @@
+<div class="h-[93vh]">
+  <div class="flex justify-between bg-sky-600 py-3 px-5">
+    <%= link_to "<", categories_path, class:"flex-end text-xl text-gray-200"%>
+    <h5 class="text-xl text-gray-200">Transactions</h5>
+    <% if user_signed_in? %>
+        <%= button_to 'Sign Out', destroy_user_session_path, method: :delete, data: {turbo: false}, class: 'text-gray-200' %>
+    <% end %>
+  </div>
+<div class="flex justify-end bg-white mb-4 p-2 shadow-md">
+<p class="font-black">Total: $<%= @category.transactions_sum%></p>
+</div>
+<div class='fluid-container'>
+  <% @category.transactions.each do |transaction| %>
+    <div class="flex justify-between items-center bg-white p-1 m-2 border">
+    <div>
+      <div class='col-5 py-3'><%= transaction.name %></div>
+      <p class="text-xs text-slate-500"><%=transaction.created_at.strftime("%e %b %y")%></p>
+      </div>
+      <div class='font-bold col-5 py-3'>$<%= transaction.amount %></div>
+    </div>
+  <% end %>
+  <br>
+</div>
+</div>
+<%= link_to 'ADD NEW TRANSACTION', new_category_transaction_path, class: "flex justify-center py-3 px-5 bg-lime-500 text-white block bottom-0"  %>
