@@ -1,8 +1,8 @@
+<a name="readme-top"></a>
 # Table of Contents
 
 - [About the Project](#about-project)
   - [Built With](#built-with)
-  - [Live Demo](#live-demo)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
@@ -10,25 +10,19 @@
 - [Authors](#authors)
 - [Future Features](#future-features)
 - [Contributing](#contributing)
-- [Show your support](#support)
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
 
-<a name="readme-top"></a>
 # Money Maestro <a name="about-project"></a>
 
-> A Ruby on Rails budgeting app that allows users to manage their transactions and sort them by categories. The app has features such as the ability to add and track expenses, categorize transactions, and view insights about their spending. The app provides users with secure and private access to their data.
+A Ruby on Rails budgeting app that allows users to manage their transactions and sort them by categories. The app has features such as the ability to add and track expenses, categorize transactions, and view insights about their spending.
 
 ## Built With <a name="built-with"></a>
 
 - Ruby on Rails
 
-## Live Demo <a name="live-demo"></a>
-
-- [Live Demo Link](https://money-maestro.osc-fr1.scalingo.io/)
-
 ## Entity Relationship Diagram <a name="er-diagram"></a>
-![er-diagram](https://github.com/microverseinc/curriculum-rails/raw/main/capstone/images/erd_diagram.png)
+![Entity relationship diagram of the Money Maestro project by @shyusu4](https://github.com/microverseinc/curriculum-rails/raw/main/capstone/images/erd_diagram.png)
 
 ## Getting Started <a name="getting-started"></a>
 
@@ -77,11 +71,7 @@ Shakhrizoda Yusupova
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page.](https://github.com/shyusu4/Budget-App/issues)
-
-## Show your support <a name="support"></a>
-
-Give a ⭐️ if you like this project!
+Feel free to check the [issues page.](https://github.com/shyusu4/money-maestro/issues)
 
 ## Acknowledgments <a name="acknowledgements"></a>
 
